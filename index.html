@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PKN: Globalisasi dan Identitas Nasional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Globalisasi dan Tantangan Identitas Nasional</h1>
+      <h2>Selamat datang, <span id="user-nim"></span></h2>
+      <p>Selamat datang di Materi PKN: Globalisasi dan Identitas Nasional</p>
+    </header>
+    <main>
+      <section id="materi">
+        <h2>Materi</h2>
+        <article>
+          <h3>Pengertian Globalisasi</h3>
+          <p>
+            Globalisasi adalah proses mendunia yang melibatkan interaksi dan integrasi antara berbagai negara dalam berbagai aspek, seperti budaya, ekonomi, dan teknologi.
+          </p>
+        </article>
+        <article>
+          <h3>Tantangan Globalisasi</h3>
+          <p>
+            Tantangan utama globalisasi adalah bagaimana suatu bangsa dapat mempertahankan identitas nasional di tengah arus budaya asing. 
+            Beberapa tantangan yang dihadapi Indonesia meliputi:
+          </p>
+          <ul>
+            <li>Melestarikan budaya lokal di tengah masuknya budaya asing.</li>
+            <li>Menjaga nilai-nilai Pancasila sebagai dasar negara.</li>
+            <li>Meningkatkan pendidikan karakter untuk memperkuat jati diri bangsa.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Strategi Menghadapi Tantangan Globalisasi</h3>
+          <p>
+            Untuk menjaga identitas nasional, Indonesia dapat mengambil langkah-langkah strategis seperti:
+          </p>
+          <ul>
+            <li>Pelestarian seni, budaya, dan bahasa daerah.</li>
+            <li>Meningkatkan rasa nasionalisme melalui pendidikan.</li>
+            <li>Mendorong generasi muda untuk mengenal dan mencintai budaya lokal.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="kuis">
+        <h2>Mini Game Kuis</h2>
+        <p>Pilih tingkat kesulitan untuk memulai kuis:</p>
+        <div id="quiz-options">
+          <button onclick="startQuiz('easy')">Mudah</button>
+          <button onclick="startQuiz('medium')">Sedang</button>
+          <button onclick="startQuiz('hard')">Sulit</button>
+          <button onclick="logout()">Logout</button>
+        </div>
+        <div id="quiz-container"></div>
+        <p id="result"></p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 - Aplikasi Interaktif PKN by Selviya</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // Cek status login sebelum mengakses materi atau kuis
+    if (!localStorage.getItem("loggedIn")) {
+      window.location.href = "login.html"; // Arahkan ke halaman login jika belum login
+    }
+  </script>
+</body>
+</html>

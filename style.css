@@ -1,0 +1,76 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* Warna latar belakang netral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Indonesia.svg/1280px-Flag_of_Indonesia.svg.png'); /* Gambar latar belakang bendera Indonesia */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.85); /* Latar belakang transparan untuk memberikan efek elegan */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    border: 2px solid #b30000; /* Garis merah khas Indonesia */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #b30000; /* Merah khas Indonesia */
+    font-weight: bold;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b30000; /* Warna merah Indonesia */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #990000; /* Warna merah yang lebih gelap saat hover */
+  }
+  
+  #error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+  }
+  
